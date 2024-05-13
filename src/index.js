@@ -57,9 +57,9 @@ export default class Timeline extends Component {
     events.forEach((event) => {
       if (this.props[`${event}Handler`]) {
         this.$el.on(event, this.props[`${event}Handler`])
-        _this2.handlers[event + 'Handler'] = _this2.props[event + 'Handler']
+        this.handlers[event + 'Handler'] = this.props[event + 'Handler']
       } else {
-        delete _this2.handlers[event + 'Handler']
+        delete this.handlers[event + 'Handler']
       }
     })
 
