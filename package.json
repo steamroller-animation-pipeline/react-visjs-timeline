@@ -1,13 +1,11 @@
 {
-  "name": "react-visjs-timeline",
-  "version": "1.5.0",
-  "description": "React component for the vis.js timeline module",
+  "name": "@steamroller/react-visjs-timeline-fix",
+  "version": "1.5.2",
+  "description": "React component for the vis.js timeline module, with bugfix for reattaching event handlers when they change",
   "main": "build/index.js",
   "scripts": {
     "format": "prettier --write ./{src,examples}/**/*.js",
     "release": "node_modules/.bin/babel src --ignore *.test.js --out-dir build",
-    "precommit": "lint-staged",
-    "prepublish": "npm run release",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "lint-staged": {
@@ -16,16 +14,6 @@
       "git add"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Lighthouse-io/react-visjs-timeline.git"
-  },
-  "author": "willmcclellan",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Lighthouse-io/react-visjs-timeline/issues"
-  },
-  "homepage": "https://github.com/Lighthouse-io/react-visjs-timeline#readme",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
