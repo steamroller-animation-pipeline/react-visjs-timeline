@@ -26,7 +26,10 @@ const groupsExample = {
   },
 }
 
-const now = moment().minutes(0).seconds(0).milliseconds(0)
+const now = moment()
+  .minutes(0)
+  .seconds(0)
+  .milliseconds(0)
 const groupCount = 3
 const itemCount = 20
 
@@ -88,8 +91,8 @@ class App extends Component {
   clickHandler(props) {
     const { group } = props
     const selectedIds = groupsExample.items
-      .filter((item) => item.group === group)
-      .map((item) => item.id)
+      .filter(item => item.group === group)
+      .map(item => item.id)
     this.setState({
       selectedIds,
     })

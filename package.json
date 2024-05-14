@@ -1,6 +1,6 @@
 {
   "name": "@steamroller/react-visjs-timeline-fix",
-  "version": "1.5.2",
+  "version": "1.5.4",
   "description": "React component for the vis.js timeline module, with bugfix for reattaching event handlers when they change",
   "main": "build/index.js",
   "scripts": {
